@@ -39,8 +39,7 @@ A nodejs based server to publishing and interacting with an sdr device remotely.
     4. Check if there are any node packages - cmd: "nvm list"
     5. As this is an initial setup for this project, we will use the latest LTS version of nodejs, using the cmd: nvm install 'lts/*', Otherwise, we will install the version for this project - cmd: "nvm install 18.13.0". Or even better run the install script that has been provided !TODO.
     6. Install the npm either by cmd: "nvm install-latest-npm"
-
-
+1   
 ## Install websdr application
     -use the npm to install the requirements of this package by cmd: "npm install" in the main directory.
     - This will download and install the dependencies required.
@@ -53,6 +52,18 @@ A nodejs based server to publishing and interacting with an sdr device remotely.
     - The console will tell you the url to open in the browser to see it running.
 
 
-
+## TODO:
+    - Create a database 
+        - Use postgres open source database
+        - install postgres package for node.js
+        - Set up connections 
+        - Configure node.js to download ISED license database
+        - The data from the ISED is "dirty", so some data clean up is required before placing into database.
+        - Create a scheduler to call and collect updates from ISED.
+        - add postgres gis data
+    - Create a map feature
+        - Use an open source mapping
+            - research the best one, openstreetmaps?
+        - Apply theo map to the website.
 
     
