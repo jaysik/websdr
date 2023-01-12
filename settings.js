@@ -4,13 +4,11 @@
 
 // Settings for the database
 const DATABASE = {
-    host: '127.0.0.1', // The ip address to the database server
+    host: process.env.DATABASE_HOST, // The ip address to the database server
     port: process.env.DATABASE_PORT, // The port number to access the database - Saved in the environment variables .env file
-    user: 'postgres',
+    user: process.env.DATABASE_USERNAME,
     password: process.env.DATABASE_PASSWORD // DO NOT place password. Use the environment variables (saved in the computer's memory.)
-
 }
-
 
 const WEBPAGE = {
     "page1": {
@@ -18,10 +16,8 @@ const WEBPAGE = {
     }
 }
 
-
-
 // Export to allow imports into other js files.
-export {
+module.exports = {
     DATABASE,
 
 }

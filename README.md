@@ -57,13 +57,10 @@ A nodejs based server to publishing and interacting with an sdr device remotely.
     - The entry point of the websdr application is ./app.js
     - Need nodejs to run this application, so ensure nodejs is installed.
     - You need to be in the main working directory of the app.
-    - On the cmd line: "npm run sdr-web-production".
+    - On the cmd line: "npm run sdr-web".
     - If wishing to run locally or developing locally, then run the command as "npm run sdr-web-development".
     - The console will tell you the url to open in the browser to see it running.
     
-
-
-
 
 ## TODO:
     - Create a database 
@@ -82,4 +79,5 @@ A nodejs based server to publishing and interacting with an sdr device remotely.
 
 ## Packages installed:
     - pg: This is the postgres database required for handling large datasets
-    - dotenv: This is to handle sensitive credentials that is required for the app, and to keep from publishing through source control such as git/github.
+    - dotenv: This is to handle sensitive credentials that is required for the app, and   to keep from publishing through source control such as git/github.
+

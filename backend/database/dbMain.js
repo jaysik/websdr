@@ -10,9 +10,16 @@
 
 // The reason for using postgres are that it is opensource (free) and very robust and powerful.
 
-
 // Need to import the pg library
 const { Client } = require('pg')
+
+
+// Check to ensure the server environment variables has been configured correctly by the user using the .env.production 
+if (process.env.DATABASE_HOST !== undefined) {
+    console.log('Environment variables are found!')
+} else {
+    console.error('Missing environment variables - Did you create a file .env.production or .env.development with variables?')
+}
 
 // Import the settings for the database
 const settings = require("../../settings.js")
