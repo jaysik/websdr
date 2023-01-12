@@ -1,10 +1,13 @@
+
 {
-  "name": "nait-coding-project",
+  "name": "Nait Web SDR",
   "version": "1.0.0",
   "description": "websdr",
-  "main": "app.js",
+  "main": "backend/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sdr-web-development": "node -r dotenv/config ./backend/main.js dotenv_config_path=./.env.development dotenv_config_debug=true",
+    "sdr-web-production": "MODE=production node ./backend/main.js"
   },
   "repository": {
     "type": "git",

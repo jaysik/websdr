@@ -1,7 +1,13 @@
+// import http to handling http requests
 const http = require('http');
 
+
+// Configuration for node.js server
+// TODO: Create a settings page for ease of use for user.
 const hostname = '127.0.0.1';
-const port = 3000;
+
+const port = process.env.DATABASE_PORT;
+
 
 const server = http.createServer((req, res) => {
     res.statusCode = 200;

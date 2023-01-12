@@ -46,10 +46,23 @@ A nodejs based server to publishing and interacting with an sdr device remotely.
 
 
 ## Running websdr application
+
+### Set the environment variables settings in the .env.production file
+    - The .env file is to store important sensitive credentials for the app to run.
+        - TODO: explain how to setup the file. Or write a script
+    - A file needs to be created filled with sensitive credentials -> .env.production
+    - To run in development mode, also add .env.development
+
+### Start the server
     - The entry point of the websdr application is ./app.js
     - Need nodejs to run this application, so ensure nodejs is installed.
-    - On the cmd line: "node ./app.js" will start the application.
+    - You need to be in the main working directory of the app.
+    - On the cmd line: "npm run sdr-web-production".
+    - If wishing to run locally or developing locally, then run the command as "npm run sdr-web-development".
     - The console will tell you the url to open in the browser to see it running.
+    
+
+
 
 
 ## TODO:
@@ -66,4 +79,7 @@ A nodejs based server to publishing and interacting with an sdr device remotely.
             - research the best one, openstreetmaps?
         - Apply theo map to the website.
 
-    
+
+## Packages installed:
+    - pg: This is the postgres database required for handling large datasets
+    - dotenv: This is to handle sensitive credentials that is required for the app, and to keep from publishing through source control such as git/github.

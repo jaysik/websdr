@@ -1,0 +1,9 @@
+// To keep environment variables from source control
+.env.production
+.env.development
+.env
+
+
+// Don't add node modules packages to repository.
+
+node_modules
